@@ -59,6 +59,7 @@ public class UserTest {
     }
 
 
+
     @Test
     public void testEquals() {
        obj.equals(obj);
