@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>User.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">demo</a> &gt; <a href="index.source.html" class="el_package">com.example.demo.controller</a> &gt; <span class="el_source">User.java</span></div><h1>User.java</h1><pre class="source lang-java linenums">package com.example.demo.controller;
+
+import java.util.Objects;
+
+<span class="fc" id="L5">public class User {</span>
+    String name;
+    String id;
+    String school;
+    int so;
+
+    public int getSo() {
+<span class="fc" id="L12">        return so;</span>
+    }
+
+    public void setSo(int so) {
+<span class="fc" id="L16">        this.so = so;</span>
+<span class="fc" id="L17">    }</span>
+
+    public String getName() {
+<span class="fc" id="L20">        System.out.println(&quot;getName&quot;);</span>
+<span class="fc" id="L21">        return name;</span>
+    }
+
+    public void setName(String name) {
+<span class="fc" id="L25">        System.out.println(&quot;setName&quot;);</span>
+<span class="fc" id="L26">        this.name = name;</span>
+<span class="fc" id="L27">    }</span>
+
+    public String getId() {
+<span class="fc" id="L30">        System.out.println(&quot;getId&quot;);</span>
+<span class="fc" id="L31">        return id;</span>
+    }
+
+    public void setId(String id) {
+<span class="fc" id="L35">        System.out.println(&quot;setId&quot;);</span>
+<span class="fc" id="L36">        this.id = id;</span>
+<span class="fc" id="L37">    }</span>
+
+    public String getSchool() {
+<span class="fc" id="L40">        System.out.println(&quot;getSchool&quot;);</span>
+<span class="fc" id="L41">        return school;</span>
+    }
+
+    public void setSchool(String school) {
+<span class="fc" id="L45">        System.out.println(&quot;setSchool&quot;);</span>
+<span class="fc" id="L46">        this.school = school;</span>
+<span class="fc" id="L47">    }</span>
+
+    @Override
+    public boolean equals(Object o) {
+<span class="fc bfc" id="L51" title="All 2 branches covered.">        if (this == o) return true;</span>
+<span class="fc bfc" id="L52" title="All 4 branches covered.">        if (o == null || getClass() != o.getClass()) return false;</span>
+<span class="fc" id="L53">        User user = (User) o;</span>
+<span class="pc bpc" id="L54" title="1 of 2 branches missed.">        return so == user.so &amp;&amp;</span>
+<span class="pc bpc" id="L55" title="1 of 2 branches missed.">                Objects.equals(name, user.name) &amp;&amp;</span>
+<span class="pc bpc" id="L56" title="1 of 2 branches missed.">                Objects.equals(id, user.id) &amp;&amp;</span>
+<span class="pc bnc" id="L57" title="All 2 branches missed.">                Objects.equals(school, user.school);</span>
+    }
+
+    @Override
+    public int hashCode() {
+<span class="fc" id="L62">        return Objects.hash(name, id, school, so);</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>
